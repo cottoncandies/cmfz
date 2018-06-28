@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "甘露明珠",
+    "count": "3",
+    "createDate": "这是时间",
+    "score": "这是分数",
+    "author": "作者",
+    "broadCast": "这是播音",
+    "brief": "我是专辑",
+    "img": "/img/captcha.jpg",
+    "children": [
+      {
+        "id": 2,
+        "name": "李荣浩-老街",
+        "size": "120 MB",
+        "url": "b04e9c3f-2bf1-4ecd-992c-a37ee04d1c1f.mp3",
+        "time": "20分钟"
+      },
+      {
+        "id": 3,
+        "name": "甘露明珠3",
+        "size": "120 MB",
+        "url": "f863cd13-8e14-4801-9252-0d0a665dda15.mp3",
+        "time": "20分钟"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "甘露明珠2",
+    "count": "3",
+    "createDate": "这是时间",
+    "score": "这是分数",
+    "author": "作者",
+    "broadCast": "这是播音",
+    "brief": "我是专辑",
+    "img": "/img/captcha.jpg",
+    "children": [
+      {
+        "id": 5,
+        "name": "李荣浩-老街",
+        "size": "120 MB",
+        "url": "b04e9c3f-2bf1-4ecd-992c-a37ee04d1c1f.mp3",
+        "time": "20分钟"
+      },
+      {
+        "id": 6,
+        "name": "甘露明珠3",
+        "size": "120 MB",
+        "url": "f863cd13-8e14-4801-9252-0d0a665dda15.mp3",
+        "time": "20分钟"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" " http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.UserDAO">
+
+    <sql id="selectUser">
+        id , password , farmington , nickname , gender , photo , location , province , city , description , phone, shangshi, createdate
+    </sql>
+
+    <sql id="saveUserData">
+        id = #{id},
+        password = #{password},
+        farmington = #{farmington},
+        nickname = #{nickname},
+        gender = #{gender},
+        photo = #{photo},
+        location = #{location},
+        province = #{province},
+        city = #{city},
+        description = #{description},
+        phone = #{phone},
+        shangshi = #{shangshi},
+        createdate = #{createDate}
+    </sql>
+
+    <select id="queryAll" resultType="User">
+        select
+        <include refid="selectUser"/>
+        from user
+    </select>
+
+    <select id="queryDistribution" resultType="User">
+        select count(id) id , province
+        from user
+        where gender = #{gender}
+        group by  province
+    </select>
+
+    <insert id="save" parameterType="User">
+        insert into user values (#{id},#{password},#{farmington},#{nickname},#{gender},#{photo},
+        #{location},#{province},#{city},#{description},#{phone},#{shangshi},#{createDate})
+    </insert>
+</mapper>
